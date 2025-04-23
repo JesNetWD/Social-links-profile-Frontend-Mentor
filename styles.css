@@ -6,6 +6,8 @@ body,
 html {
   margin: 0;
   padding: 0;
+  background-color: #141414;
+  font-family: "inter regular";
 }
 
 @font-face {
@@ -13,27 +15,19 @@ html {
   src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf);
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #141414;
-}
-
 .profile {
+  min-width: 320px;
+  width: 50px;
+  max-width: 380px;
+  margin: 5% auto;
   text-align: center;
   background-color: #1f1f1f;
-  padding: 30px 30px 10px;
+  padding: 30px;
   border-radius: 10px;
-  min-width: 320px;
-  width: 100%;
-  max-width: 380px;
-  font-family: "inter regular";
 }
 
 .profile header img {
-  max-width: 25%;
+  max-width: 30%;
   border-radius: 50%;
 }
 
@@ -42,14 +36,21 @@ html {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 150%;
-  margin: 0.75em 0 0;
+  margin-bottom: 0;
 }
 
 .address {
   color: #c5f82a;
-  margin: 0;
   font-size: 14px;
   font-weight: 600;
+  margin-top: 0;
+}
+
+main p {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 32px 0 24px;
+  font-style: italic;
 }
 
 .social-btn {
@@ -59,19 +60,12 @@ html {
   border-radius: 10px;
   color: #ffffff;
   width: 100%;
-  padding: 12px 0;
+  padding: 12px;
   text-align: center;
   text-decoration: none;
   font-size: 14px;
   margin: 14px auto 0;
   font-weight: 600;
-}
-
-main p {
-  color: #ffffff;
-  font-size: 14px;
-  margin: 1.5rem 0;
-  font-style: italic;
 }
 
 .social-btn:hover {
@@ -81,7 +75,7 @@ main p {
 }
 
 .attribution {
-  margin-top: 20px;
+  padding: 10px;
   color: #ffffff;
   font-size: 11px;
   text-align: center;
